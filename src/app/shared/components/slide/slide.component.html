@@ -1,0 +1,13 @@
+<div *ngFor="let slide of dataSlide; let i = index">
+    <div *ngIf="defaultSlide === i" class="container-slide-app uk-padding" #test>
+        <div class="container-slide-description slide-description-text animate__animated animate__fadeInRightBig">
+            <h1>{{slide.title}}</h1>
+            <p style="color: white;">{{slide.shortDescription}}</p>
+            <button class="uk-button uk-button-secondary uk-border-pill uk-box-shadow-small"
+            [routerLink]="[ '/details' ]">Cotizar</button>
+        </div>
+        <div class="container-slide-description slide-description-img animate__animated animate__fadeInRightBig">
+            <img src="{{slide.imgPath}}">
+        </div>
+    </div>
+</div>

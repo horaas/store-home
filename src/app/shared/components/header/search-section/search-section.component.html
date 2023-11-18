@@ -1,0 +1,22 @@
+<div class="container-flex-search uk-visible@m">
+    <button class="uk-button uk-button-default testButton">
+        <i class="fa fa-search"></i>
+    </button>
+    <input class="uk-input uk-form-width-large" type="text" placeholder="Buscar">
+</div>
+
+<a class="uk-navbar-item uk-hidden@m">
+    <i class="fa fa-search icons-nav-bar uk-margin-remove"
+    (click)="handleClickBarSearch()"></i>
+</a>
+
+<div class="container-search-mobile animate__animated animate__faster animate__zoomIn"
+*ngIf="showMobileBarSearch"
+[ngClass]="{'animate__zoomOut': !showMobileBarSearch}">
+    <div class="container-flex-search uk-margin-bottom">
+        <button class="uk-button uk-button-default">
+            <i class="fa fa-search"></i>
+        </button>
+        <input class="uk-input uk-form-width-large" type="text" placeholder="Input">
+    </div>
+</div>

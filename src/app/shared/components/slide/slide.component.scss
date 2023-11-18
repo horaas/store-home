@@ -1,0 +1,90 @@
+@import '../../../../css/variables';
+.container-slide-app {
+  position: relative;
+  background: url(https://urco.webrouk.com/bg-pattern.8152cf27f8d3bd1b2c84.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 75px);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  @media #{$max_767} {
+    flex-direction: column-reverse;
+  }
+  .container-slide-description {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    @media #{$max_767} {
+      height: 50%;
+    }
+  }
+  .slide-description-text {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    @media #{$max_767} {
+      margin: unset;
+    }
+    h1 {
+      font-size: 60px;
+      color: white;
+      text-transform: uppercase;
+      padding-bottom: 40px;
+      font-weight: bolder;
+      text-align: center;
+      @media #{$max_767} {
+        font-size: 32px;
+        margin-bottom: 0;
+      }
+      @media #{$max_height_350} {
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+      }
+    }
+    p {
+      align-self: center;
+      @media #{$max_767} {
+        display: none;
+      }
+    }
+    button {
+      align-self: center;
+    }
+  }
+  .slide-description-img {
+    img {
+      height: 70%;
+    }
+  }
+}
+
+.container-slide-app:before {
+  display: block;
+  position: absolute;
+  height: calc(100vh - 75px);
+  width: 100%;
+  content: "";
+  background: linear-gradient(180deg, rgba(117, 113, 249, .85), #f3f4f7);
+}
+
+// .container-slide-description {
+//   z-index: 1001;
+
+//   div {
+//     position: relative;
+//     width: 100%;
+//     height: 100%;
+
+//     img {
+//       transform: translate(-50%, -50%);
+//       position: absolute;
+//       top: 50%;
+//       left: 50%;
+//       max-height: 80%;
+//       object-fit: contain;
+//     }
+//   }
+
+// }

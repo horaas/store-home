@@ -1,0 +1,87 @@
+
+$primary-color: #25c0f9;
+.prueba-cls {
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
+  .display-flex-row {
+    padding: 10px;
+  }
+}
+
+.prueba-cls:hover {
+  cursor: pointer;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, .12);
+  color: $primary-color;
+  margin-left: -20px;
+  padding-left: 20px;
+}
+
+.container-heading {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.text-heading {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.prueba-heading {
+  border: 0px;
+  height: 1px;
+  background-color: #bcb6b6;
+  display: inline-block;
+  width: 10px;
+  flex: 1;
+}
+
+
+.container-card-home {
+  .prueba-card {
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    img {
+      border-radius: 15px 15px 0 0;
+    }
+    .container-icon-product {
+      position: absolute;
+      float:inline-end;
+      right: 10px;
+      a {
+        margin-top: 5px;
+        padding: 4px;
+        width: 25px;
+        background-color: #3b424e;
+        color: white;
+        border-radius: 20px;
+        text-align: center;
+        vertical-align: middle;
+        .uk-active {
+          background-color: red;
+        }
+        i {
+          vertical-align: middle;
+        }
+        .fa-paper-plane {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+.container-btn {
+  padding: 0 10px 10px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .uk-button-secondary {
+    padding: 5px 10px;
+    text-transform: capitalize;
+    line-height: unset;
+  }
+}
